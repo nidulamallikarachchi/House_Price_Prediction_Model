@@ -1,38 +1,59 @@
+/* frontend/src/App.css */
+
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.prediction-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.prediction-form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.prediction-form div {
+  margin-bottom: 15px;
+}
+
+.prediction-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.prediction-form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.prediction-form button {
+  padding: 10px;
+  background-color: #007BFF;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.prediction-form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  background-color: #d4edda;
 }
